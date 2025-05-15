@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Event Assignment Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+  <!-- Button Click -->
+  <button id="colorBtn">Change my color</button>
+
+  <!-- Hover Effect -->
+  <div id="hoverBox" class="hover-box">Hover over me!</div>
+
+  <!-- Keypress Detection -->
+  <input type="text" id="keyInput" placeholder="Type something..." />
+
+  <!-- Bonus: Double-click Secret Action -->
+  <p id="secret" style="user-select:none;cursor:pointer;">Double-click me for a surprise!</p>
+
+  <hr />
+
+  <!-- Interactive: Simple Image Gallery -->
+  <div id="gallery">
+    <img src="/feb-2025-javascript-events-and-basic-interactivity-naama-abucheri/images/download.png" class="gallery-img" alt="Gallery Image 1" />
+    <img src="/feb-2025-javascript-events-and-basic-interactivity-naama-abucheri/images/download(1).jpg" class="gallery-img" alt="Gallery Image 2" />
+    <img src="/feb-2025-javascript-events-and-basic-interactivity-naama-abucheri/images/download(1).png" class="gallery-img" alt="Gallery Image 3" />
+    <div id="mainImageContainer">
+      <img id="mainImage" src="/feb-2025-javascript-events-and-basic-interactivity-naama-abucheri/images/download(2).jpg" alt="Main Display" />
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" data-tab="1">Tab 1</button>
+    <button class="tab-button" data-tab="2">Tab 2</button>
+    <button class="tab-button" data-tab="3">Tab 3</button>
+  </div>
+  <div class="tab-content" id="tab-1">Content for Tab 1</div>
+  <div class="tab-content" id="tab-2" style="display:none;">Content for Tab 2</div>
+  <div class="tab-content" id="tab-3" style="display:none;">Content for Tab 3</div>
+
+  <hr />
+
+  <!-- Form Validation -->
+  <form id="signupForm" novalidate>
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" required /><br />
+    <small id="emailFeedback" class="feedback"></small><br />
+
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" required minlength="8" /><br />
+    <small id="passwordFeedback" class="feedback"></small><br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
